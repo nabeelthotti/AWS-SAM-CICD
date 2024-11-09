@@ -19,5 +19,5 @@ jobs:
 
 # Run Unit tests- Specify unit tests here 
 
-# sam deploy
+# sam deploys
       - run: sam deploy --no-confirm-changeset --no-fail-on-empty-changeset --stack-name sam-hello-world --s3-bucket aws-sam-example-bucket --capabilities CAPABILITY_IAM --region us-west-1
