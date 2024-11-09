@@ -36,8 +36,7 @@ def lambda_handler(event, context):
     return {
         "statusCode": 200,
         "body": json.dumps({
-            "message0": "Hello world ...",
-            "message1": "This is Nabeel's CICD pipeline"
+            "message": "Hello world ... This is Nabeel's CICD pipeline"
             # "location": ip.text.replace("\n", "")
         }),
     }
