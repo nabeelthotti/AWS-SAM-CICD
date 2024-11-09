@@ -18,14 +18,14 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-west-1
 
-      # Build the SAM application using a container
+      # Build the SAM application
       - name: SAM Build
         run: sam build --use-container
 
-      # Deploy the SAM application with --guided to avoid parameter conflicts
-      - name: SAM Deploy (Guided)
+      # Deploy the SAM application without guided configuration
+      - name: SAM Deploy
         run: |
-          sam deploy --guided \
+          sam deploy \
             --no-confirm-changeset \
             --no-fail-on-empty-changeset \
             --stack-name sam-hello-world \
