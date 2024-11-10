@@ -1,9 +1,9 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 Description: >
-  github-actions-with-aws-sam
+  AWS-SAM-CICD
 
-  Sample SAM Template for github-actions-with-aws-sam
+  Sample SAM Template for AWS-SAM-CICD
 
 # More info about Globals: https://github.com/awslabs/serverless-application-model/blob/master/docs/globals.rst
 Globals:
